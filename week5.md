@@ -43,7 +43,8 @@ sudo su vim /etc/ssh/sshd_config
 The configuration after modification is as follows:  
 <img src=https://pic1.imgdb.cn/item/635a663d16f2c2beb13a67eb.png width=65% />
 
-Problem occurred:  the above operations would work given that you have openssh-serve installed, however, duo to the Java Runtime issue, the problem cannot be solved.   
+### *Problem occurred*  
+*The above operations would work given that you have openssh-serve installed, however, duo to the Java Runtime issue, the problem cannot be solved.*   
 <img src=https://pic1.imgdb.cn/item/635a6a0616f2c2beb141decc.png width=65% />
 
 So, guanxiong offered me another way, that is to ping the IP address instead of using ssh.  
