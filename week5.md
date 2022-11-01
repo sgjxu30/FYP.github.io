@@ -51,6 +51,9 @@ The configuration after modification is as follows:
 So, I chose another way, ping the IP address instead of using ssh. (This method is suggested by Guanxiong Shen, PhD student of my project supervisior, Junqing Zhang)  
 <img src=https://pic1.imgdb.cn/item/6360fc4d16f2c2beb10037a5.jpg width=65% />  
 
+The following figure is the result of using ssh which I tried another day. The above problem would occur is due to the mistake when settig the IP of my computer.  
+"Confifure IPv4" should set to Manually instead of "Using DHCP with manual address". And the "Subnet Mask" should set to 255.255.255.0
+
 <img src=https://pic1.imgdb.cn/item/6361000716f2c2beb10dce4c.jpg width=65% />
 
 
@@ -74,3 +77,6 @@ The board outputs:
 <img src=https://pic1.imgdb.cn/item/636113d816f2c2beb153c75a.png width=80% />
 
 CSI (Chip State Information) is going to the computer smoothly.  
+
+However, when following the guide, this problem occurs, so I dicide to learn CSI first, and deal with this problem later in Week 6.
+<img src=https://pic1.imgdb.cn/item/63611a2316f2c2beb16ee660.jpg width=80% />
