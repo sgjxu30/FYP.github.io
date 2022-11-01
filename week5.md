@@ -12,7 +12,8 @@ sdr platform chosen for the project: zed_fmcs2, with board combination Xinlinx Z
 3. 2 antennas are connected to RXA/TXA port on FMC radio board;
 4. Config the board to SD card boot mode <!--(check the board manual)-->;
 5. Connect the zedboard with PC usinga ethernet cable; <!--pic.连接图片-->
-6. Change the IP address of the PC used to connect the zedboard <!--ip add-->
+6. Change the IP address of the PC used to connect the zedboard 
+<img src=https://pic1.imgdb.cn/item/6361169c16f2c2beb15ee6f5.png width=80% />
 7. Login to the board from PC
 ```
 ssh root@192.168.10.122
@@ -47,7 +48,29 @@ The configuration after modification is as follows:
 *The above operations would work given that you have openssh-serve installed, however, duo to the Java Runtime issue, the problem cannot be solved.*   
 <img src=https://pic1.imgdb.cn/item/635a6a0616f2c2beb141decc.png width=65% />
 
-So, guanxiong offered me another way, that is to ping the IP address instead of using ssh.  
-<!--ping 192.168.10.122-->
+So, I chose another way, ping the IP address instead of using ssh. (This method is suggested by Guanxiong Shen, PhD student of my project supervisior, Junqing Zhang)  
+<img src=https://pic1.imgdb.cn/item/6360fc4d16f2c2beb10037a5.jpg width=65% />  
 
-*to be continued...*
+<img src=https://pic1.imgdb.cn/item/6361000716f2c2beb10dce4c.jpg width=65% />
+
+
+## **CSI**
+> https://github.com/open-sdr/openwifi/blob/master/doc/app_notes/csi.md
+
+Run the following cmd in Ternimal
+```
+ssh root@192.168.10.122
+(password: openwifi)
+cd openwifi
+./wgd.sh
+(Wait for the script completed)
+./monitor_ch.sh sdr0 11
+(Monitor on channel 11. You can change 11 to other channel that is busy)
+insmod side_ch.ko
+./side_ch_ctl g
+```
+
+The board outputs:  
+<img src=https://pic1.imgdb.cn/item/636113d816f2c2beb153c75a.png width=80% />
+
+CSI (Chip State Information) is going to the computer smoothly.  
