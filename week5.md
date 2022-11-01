@@ -74,8 +74,8 @@ insmod side_ch.ko
 ```
 
 The board outputs:  
-<img src=https://pic1.imgdb.cn/item/63611ac716f2c2beb171fb2c.jpg width=50% />
-<img src=https://pic1.imgdb.cn/item/63611ac716f2c2beb171fb42.jpg width=50% />
+<img src=https://pic1.imgdb.cn/item/63611ac716f2c2beb171fb2c.jpg width=48% />
+<img src=https://pic1.imgdb.cn/item/63611ac716f2c2beb171fb42.jpg width=48% />
 
 CSI (Chip State Information) is going to the computer smoothly.  
 
