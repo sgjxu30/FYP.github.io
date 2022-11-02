@@ -14,7 +14,7 @@ sdr platform chosen for the project: zed_fmcs2, with board combination Xinlinx Z
 5. Connect the zedboard with PC usinga ethernet cable; <!--pic.连接图片-->
 6. Change the IP address of the PC used to connect the zedboard 
 <img src=https://pic1.imgdb.cn/item/6361169c16f2c2beb15ee6f5.png width=80% />
-7. Login to the board from PC
+7. Login to the board from PC  
 ```
 ssh root@192.168.10.122
 ```
@@ -56,6 +56,9 @@ The following figure is the result of using ssh which I tried another day. The a
 
 <img src=https://pic1.imgdb.cn/item/6361000716f2c2beb10dce4c.jpg width=65% />
 
+And this is the picture showing the board is working.  
+<img src=https://pic1.imgdb.cn/item/63624ab916f2c2beb1d1c56d.jpg widtg=60% />
+
 
 ## **CSI**
 > https://github.com/open-sdr/openwifi/blob/master/doc/app_notes/csi.md
@@ -79,5 +82,24 @@ The board outputs:
 
 CSI (Chip State Information) is going to the computer smoothly.  
 
-However, when following the guide, this problem occurs, so I dicide to learn CSI first, and deal with this problem later in Week 6.
+However, when following the guide, this problem occurs, and i realized that I may need more time to read through thr guidance. So I dicide to learn CSI first, and deal with this problem later in Week 6.
 <img src=https://pic1.imgdb.cn/item/63611a2316f2c2beb16ee660.jpg width=80% />
+
+## Physical Layer
+### OFDM
+> Principle  
+> https://zhuanlan.zhihu.com/p/26868447
+> https://zhuanlan.zhihu.com/p/60794288  
+> simulation  
+> https://zhuanlan.zhihu.com/p/57967971
+
+### MIMO 
+> Principle
+> https://zhuanlan.zhihu.com/p/41520064  
+> Deep Learning
+> https://zhuanlan.zhihu.com/p/272517501
+
+
+## Week 6
+* Acquire basic knowledge of CSI
+* complete the remaining part of openwifi/csi
