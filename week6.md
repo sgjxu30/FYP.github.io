@@ -6,6 +6,17 @@ Note: Modify the file path when running cmd line.
 <img src=https://pic1.imgdb.cn/item/636a31d716f2c2beb1264660.png width=65% />  
 
 ## **Capture CSI**
+### Modify cmd lines
+This cmd line should be adjuted according to the channel you monitor.  
+```
+./monitor_ch.sh sdr0 11
+(Monitor on channel 11. You can change 11 to other channel that is busy)
+```
+In this project, I am using channel 36.  
+```
+./monitor_ch.sh sdr0 36
+```
+
 ### Capture only CSI of those packets from Wi-Fi dongle
 ```
 ./side_ch_ctl wh1h4001
