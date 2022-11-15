@@ -35,3 +35,9 @@ No image displayed when running side_info_display.py file, already keep zedboard
 * can capture CSI samples without a MAC address filter (evidence shown in last week's blog)
 * can NOT capture CSI sample from the PC which is connected to the wifi dongle  
 <img src=https://pic1.imgdb.cn/item/636adc5016f2c2beb14eeafb.jpg width=80% />
+
+## **REASON FOUND** 9 Nov 2022
+1. wireless mode n/ac mixed under 5G  
+   --> 2.4G might work, try this later at home
+2. USB Ehternet adaptor may have changed UDP port
+   --> possible solution: find a computer with ethernet port
